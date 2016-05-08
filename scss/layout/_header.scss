@@ -1,0 +1,110 @@
+.main-header {
+	background: url("../img/bg-pattern.png") repeat 0 0;
+	background-color: #fafafa;
+	padding-top: .5em;
+	padding-bottom: 2em;
+	margin-bottom:2em;
+	text-align: center;
+}
+.my-picture,
+.main-header p {
+	max-width: 80%;
+	margin: 10px auto;
+}
+
+.my-picture {
+	border-radius: 0 15%;
+
+	@media #{$brk-narrow} {
+		max-width: 45%;
+		float:right;
+	}
+}
+
+.header-bio {
+	@media #{$brk-narrow} {
+		position:relative;
+		display: block;
+		max-width: 90%;
+		margin: 10px auto;
+	}
+
+	p {
+		@media #{$brk-narrow} {
+			position: absolute;
+			top:20%;
+			vertical-align: middle;
+			text-align: left;
+			font-size: 1.2em;
+			font-weight: lighter;
+			max-width: 45%;
+			float: left;
+			padding-left: 10px;
+		}
+	}
+	span {
+		@media #{$brk-wide} {
+			vertical-align: middle;
+			font-size: 1.3em;
+		}
+	}
+
+}
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 2em;
+	margin: 0;
+
+	@media #{$brk-wide} {
+		float: left;
+	}
+}
+
+.main-nav {
+	padding: 0 10px;
+	list-style-type: none;
+	margin: 5px auto;
+
+	@media #{$brk-narrow} {
+		text-align: center;
+	}
+	@media #{$brk-wide} {
+		float: right;
+	}
+
+	ul {
+		@media #{$brk-wide} {
+			float: left;
+		}
+	}
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	margin-top: 10px;
+}
+.main-nav li {
+	background-color: white;
+
+	@media #{$brk-narrow} {
+		display: inline-block;
+		margin-left: 15px;
+		background-color: #fafafa;
+	}
+}
+
+.main-nav a {
+	font-size: 1em;
+	color: #4a4a4a;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}

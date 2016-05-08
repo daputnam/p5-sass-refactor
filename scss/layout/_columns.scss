@@ -1,0 +1,35 @@
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+	@media #{$brk-narrow} {
+		float: left;
+	}
+	@media #{$brk-wide} {
+		width: 100%;
+	}
+
+	.portfolio-item {
+		@media #{$brk-wide} {
+			margin-right: 20px;
+			display: inline-block;
+			width: 30%;
+		}
+	}
+}
+
+.primary,
+.secondary {
+	@media #{$brk-narrow} {
+		width: 50%;
+    }
+    @media #{$brk-wide} {
+    	width: 100%;
+    }	
+}
+
+.wrapper > .primary,
+.wrapper > .secondary { 
+	@media #{$brk-wide} {
+		display: inline-block;		
+	}
+}

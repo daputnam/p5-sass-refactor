@@ -1,0 +1,38 @@
+.wrapper {
+	text-align: center;
+	max-width:90%;
+	margin:0 auto;
+
+	@media #{$brk-narrow} {
+		width: 90%;
+		margin: 0 auto;
+		background-color: white;
+	}
+}
+
+.portfolio-item {
+	vertical-align:top;
+	min-height: 400px;
+
+}
+.portfolio-item p {
+	padding-bottom:1em;
+
+	@media #{$brk-wide} {
+		font-size:1.2em;
+	}
+}
+
+.container {
+	@media #{$brk-wide} {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+}
+
+#portfolio {
+	@media #{$brk-wide} {
+		margin-top: 2.5em;
+		margin-bottom: 2.5em;
+	}
+}
