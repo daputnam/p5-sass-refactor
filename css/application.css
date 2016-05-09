@@ -5,9 +5,10 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
   line-height: 1.6;
   color: #4a4a4a;
+  font-family: "Ubuntu", Helvetica, sans-serif;
   margin: 0 auto;
   max-width: 1800px; }
 
@@ -51,11 +52,11 @@ img {
   text-align: center;
   max-width: 90%;
   margin: 0 auto; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .wrapper {
       width: 90%;
       margin: 0 auto;
-      background-color: white; } }
+      background-color: #fff; } }
 
 .portfolio-item {
   vertical-align: top;
@@ -63,16 +64,16 @@ img {
 
 .portfolio-item p {
   padding-bottom: 1em; }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .portfolio-item p {
       font-size: 1.2em; } }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .container {
     max-width: 90%;
     margin: 0 auto; } }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   #portfolio {
     margin-top: 2.5em;
     margin-bottom: 2.5em; } }
@@ -80,28 +81,28 @@ img {
 .col {
   padding-right: 1em;
   padding-left: 1em; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .col {
       float: left; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .col {
       width: 100%; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .col .portfolio-item {
       margin-right: 20px;
       display: inline-block;
       width: 30%; } }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .primary,
   .secondary {
     width: 50%; } }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .primary,
   .secondary {
     width: 100%; } }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .wrapper > .primary,
   .wrapper > .secondary {
     display: inline-block; } }
@@ -121,18 +122,18 @@ img {
 
 .my-picture {
   border-radius: 0 15%; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .my-picture {
       max-width: 45%;
       float: right; } }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .header-bio {
     position: relative;
     display: block;
     max-width: 90%;
     margin: 10px auto; } }
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .header-bio p {
     position: absolute;
     top: 20%;
@@ -143,7 +144,7 @@ img {
     max-width: 45%;
     float: left;
     padding-left: 10px; } }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
   .header-bio span {
     vertical-align: middle;
     font-size: 1.3em; } }
@@ -152,7 +153,7 @@ img {
 .name {
   font-size: 2em;
   margin: 0; }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .name {
       float: left; } }
 
@@ -160,13 +161,13 @@ img {
   padding: 0 10px;
   list-style-type: none;
   margin: 5px auto; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .main-nav {
       text-align: center; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .main-nav {
       float: right; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .main-nav ul {
       float: left; } }
 
@@ -178,8 +179,8 @@ img {
   margin-top: 10px; }
 
 .main-nav li {
-  background-color: white; }
-  @media screen and (min-width: 769px) {
+  background-color: #fff; }
+  @media (min-width: 769px) {
     .main-nav li {
       display: inline-block;
       margin-left: 15px;
@@ -201,13 +202,13 @@ img {
   background: #fafafa;
   padding: 2em 0;
   margin-top: 30px; }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .main-footer h3 {
       text-transform: uppercase; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .main-footer .cta {
       margin-bottom: 1em; } }
-  @media screen and (min-width: 1025px) {
+  @media (min-width: 1025px) {
     .main-footer p {
       margin: 0 auto;
       max-width: 40%;
@@ -216,12 +217,12 @@ img {
 
 .footer-large {
   display: none; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .footer-large {
       display: block;
       border-top: 1px solid #d3d3d3;
       margin: 0 5%; } }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .footer-large .float-left {
       margin-top: 16px; } }
 
@@ -229,15 +230,15 @@ img {
   border-top: 1px solid #d3d3d3;
   padding-top: 5%;
   margin: 0 5%; }
-  @media screen and (min-width: 769px) {
+  @media (min-width: 769px) {
     .footer-mobile {
       display: none; } }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .footer-nav {
     text-align: center;
     float: right; } }
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .footer-nav li {
     display: inline-block;
     margin-left: 15px;

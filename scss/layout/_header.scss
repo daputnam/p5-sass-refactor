@@ -1,6 +1,6 @@
 .main-header {
 	background: url("../img/bg-pattern.png") repeat 0 0;
-	background-color: #fafafa;
+	background-color: $color-bg-accent;
 	padding-top: .5em;
 	padding-bottom: 2em;
 	margin-bottom:2em;
@@ -15,14 +15,14 @@
 .my-picture {
 	border-radius: 0 15%;
 
-	@media #{$brk-narrow} {
+	@include narrow {
 		max-width: 45%;
 		float:right;
 	}
 }
 
 .header-bio {
-	@media #{$brk-narrow} {
+	@include narrow {
 		position:relative;
 		display: block;
 		max-width: 90%;
@@ -30,7 +30,7 @@
 	}
 
 	p {
-		@media #{$brk-narrow} {
+		@include narrow {
 			position: absolute;
 			top:20%;
 			vertical-align: middle;
@@ -43,7 +43,7 @@
 		}
 	}
 	span {
-		@media #{$brk-wide} {
+		@include wide {
 			vertical-align: middle;
 			font-size: 1.3em;
 		}
@@ -57,7 +57,7 @@
 	font-size: 2em;
 	margin: 0;
 
-	@media #{$brk-wide} {
+	@include wide {
 		float: left;
 	}
 }
@@ -67,44 +67,47 @@
 	list-style-type: none;
 	margin: 5px auto;
 
-	@media #{$brk-narrow} {
+	@include narrow {
 		text-align: center;
 	}
-	@media #{$brk-wide} {
+	@include wide {
 		float: right;
 	}
 
 	ul {
-		@media #{$brk-wide} {
+		@include wide {
 			float: left;
 		}
 	}
 }
 
-.name a,
-.main-nav a {
-	display: block;
-	text-align: center;
-	padding: 10px 15px;
-	margin-top: 10px;
+.name,
+.main-nav {
+	a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+		margin-top: 10px;
+	}
 }
-.main-nav li {
-	background-color: white;
 
-	@media #{$brk-narrow} {
+.main-nav li {
+	background-color: $white;
+
+	@include narrow {
 		display: inline-block;
 		margin-left: 15px;
-		background-color: #fafafa;
+		background-color: $alabaster;
 	}
 }
 
 .main-nav a {
 	font-size: 1em;
-	color: #4a4a4a;
+	color: $tundora-grey;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: #093a58;
+	color: $tarawera-blue;
 }

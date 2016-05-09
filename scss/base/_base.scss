@@ -7,10 +7,10 @@
 }
 
 body {
-	font-family: 'Ubuntu', sans-serif;
-	line-height: 1.6;
-	color: #4a4a4a;
-	margin:0 auto;
+	@include text(1em, 1.6, $color: $color-text-dark);
+
+	font-family: $stack-sans-serif;
+	margin: $margin-centered;
 	max-width: 1800px;
 	
 }
@@ -23,7 +23,7 @@ p {
 h2,
 h3,
 a {
-	color: #4a4a4a;
+	color: $color-text-dark;
 }
 
 h2 {
@@ -51,9 +51,11 @@ img {
 	float:left;
 
 }
+
 .float-right {
 	float:right;
 }
+
 .clearfix::after {
 	content: " ";
 	display: table;

@@ -1,6 +1,31 @@
+/// Descriptive color variables
+
+$white			: #fff;
+$black			: #000;
+$alabaster		: #fafafa;
+$alto-grey		: #d3d3d3;
+$tundora-grey 	: #4a4a4a;
+$tarawera-blue	: #093a58;
+
+// Functional Color Variables
+
+$color-bg-main		: $white;
+$color-bg-accent	: $alabaster;
+$color-text-dark	: $tundora-grey;
+$color-border-dark	: $alto-grey;
+
+
+//Font Stacks
+
+$stack-sans-serif	: 'Ubuntu', Helvetica, sans-serif;
+
+
+// Margin centered
+$margin-centered	: 0 auto;
+
 
 
 // Media Query Break Points
 
-$brk-narrow : 'screen and (min-width: 769px)';
-$brk-wide : 'screen and (min-width: 1025px)';
+//$brk-narrow : 'screen and (min-width: 769px)';
+//$brk-wide : 'screen and (min-width: 1025px)';

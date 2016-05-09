@@ -1,15 +1,15 @@
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
-	@media #{$brk-narrow} {
+	@include narrow {
 		float: left;
 	}
-	@media #{$brk-wide} {
+	@include wide {
 		width: 100%;
 	}
 
 	.portfolio-item {
-		@media #{$brk-wide} {
+		@include wide {
 			margin-right: 20px;
 			display: inline-block;
 			width: 30%;
@@ -19,17 +19,17 @@
 
 .primary,
 .secondary {
-	@media #{$brk-narrow} {
+	@include narrow {
 		width: 50%;
     }
-    @media #{$brk-wide} {
+    @include wide {
     	width: 100%;
     }	
 }
 
 .wrapper > .primary,
 .wrapper > .secondary { 
-	@media #{$brk-wide} {
+	@include wide {
 		display: inline-block;		
 	}
 }

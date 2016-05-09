@@ -3,25 +3,25 @@
 }
 
 .main-footer {
-	background: #fafafa;
+	background: $color-bg-accent;
 	padding: 2em 0;
 	margin-top: 30px;
 
 	h3 {
-		@media #{$brk-wide} {
+		@include wide {
 			text-transform: uppercase;
 		}
 	}
 
 	.cta {
-		@media #{$brk-wide} {
+		@include wide  {
 			margin-bottom:1em;
 		}
 	}
 
 	p {
-		@media #{$brk-wide} {
-			margin: 0 auto;
+		@include wide {
+			margin: $margin-centered;
 			max-width: 40%;
 			margin-bottom: 0;
 			font-size: 1.5em;
@@ -32,41 +32,41 @@
 .footer-large {
 	display:none;
 
-	@media #{$brk-narrow} {
+	@include narrow {
 		display: block;
-		border-top: 1px solid #d3d3d3;
+		border-top: 1px solid $color-border-dark;
 		margin: 0 5%;
 	}
 
 	.float-left {
-		@media #{$brk-narrow} {
+		@include narrow{
 			margin-top: 16px;
 		}
 	}
 }
 
 .footer-mobile {
-	border-top: 1px solid #d3d3d3;
+	border-top: 1px solid $color-border-dark;
 	padding-top:5%;
 	margin: 0 5% ;
 
-	@media #{$brk-narrow} {
+	@include narrow {
 		display:none;
 	}
 
 }
 
 .footer-nav {
-	@media #{$brk-narrow} {
+	@include narrow {
 		text-align: center;
 		float:right;
 	}
 
 	li {
-		@media #{$brk-narrow} {
+		@include narrow {
 			display: inline-block;
 			margin-left: 15px;
-			background-color: #fafafa;
+			background-color: $color-bg-accent;
 		}
 	}
 }

@@ -1,12 +1,12 @@
 .wrapper {
 	text-align: center;
 	max-width:90%;
-	margin:0 auto;
+	margin: $margin-centered;
 
-	@media #{$brk-narrow} {
+	@include narrow {
 		width: 90%;
 		margin: 0 auto;
-		background-color: white;
+		background-color: $color-bg-main
 	}
 }
 
@@ -18,20 +18,20 @@
 .portfolio-item p {
 	padding-bottom:1em;
 
-	@media #{$brk-wide} {
+	@include wide {
 		font-size:1.2em;
 	}
 }
 
 .container {
-	@media #{$brk-wide} {
+	@include wide  {
 		max-width: 90%;
-		margin: 0 auto;
+		margin: $margin-centered;
 	}
 }
 
 #portfolio {
-	@media #{$brk-wide} {
+	@include wide  {
 		margin-top: 2.5em;
 		margin-bottom: 2.5em;
 	}
