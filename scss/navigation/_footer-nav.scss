@@ -1,0 +1,14 @@
+.footer-nav {
+	@include narrow {
+		text-align: center;
+		float:right;
+	}
+
+	li {
+		@include narrow {
+			display: inline-block;
+			margin-left: 15px;
+			background-color: $color-bg-accent;
+		}
+	}
+}

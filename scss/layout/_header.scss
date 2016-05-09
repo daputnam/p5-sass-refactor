@@ -42,6 +42,7 @@
 			padding-left: 10px;
 		}
 	}
+	
 	span {
 		@include wide {
 			vertical-align: middle;
@@ -50,8 +51,6 @@
 	}
 
 }
-
-/* ---- Navigation ---- */
 
 .name {
 	font-size: 2em;
@@ -62,27 +61,8 @@
 	}
 }
 
-.main-nav {
-	padding: 0 10px;
-	list-style-type: none;
-	margin: 5px auto;
 
-	@include narrow {
-		text-align: center;
-	}
-	@include wide {
-		float: right;
-	}
-
-	ul {
-		@include wide {
-			float: left;
-		}
-	}
-}
-
-.name,
-.main-nav {
+.name {
 	a {
 		display: block;
 		text-align: center;
@@ -91,23 +71,3 @@
 	}
 }
 
-.main-nav li {
-	background-color: $white;
-
-	@include narrow {
-		display: inline-block;
-		margin-left: 15px;
-		background-color: $alabaster;
-	}
-}
-
-.main-nav a {
-	font-size: 1em;
-	color: $tundora-grey;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	color: $tarawera-blue;
-}

@@ -21,6 +21,7 @@
 
 	p {
 		@include wide {
+			@extends center-content; 
 			margin: $margin-centered;
 			max-width: 40%;
 			margin-bottom: 0;
@@ -54,19 +55,4 @@
 		display:none;
 	}
 
-}
-
-.footer-nav {
-	@include narrow {
-		text-align: center;
-		float:right;
-	}
-
-	li {
-		@include narrow {
-			display: inline-block;
-			margin-left: 15px;
-			background-color: $color-bg-accent;
-		}
-	}
 }
