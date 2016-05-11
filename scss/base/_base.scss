@@ -7,8 +7,9 @@
 }
 
 body {
+	@extend %center-content;
 	@include text(1em, 1.6, $color: $color-text-dark);
-	@extends %center-content;
+	
 	font-family: $stack-sans-serif;
 	//margin: $margin-centered;
 	max-width: 1800px;

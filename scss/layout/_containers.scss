@@ -1,5 +1,5 @@
 .wrapper {
-	@extends %center-content;
+	@extend %center-content;
 	text-align: center;
 	max-width:90%;
 	//margin: $margin-centered;
@@ -26,7 +26,7 @@
 
 .container {
 	@include wide  {
-		@extends %center-content;
+		@extend %center-content;
 		max-width: 90%;
 		//margin: $margin-centered;
 	}
