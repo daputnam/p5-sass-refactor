@@ -1,3 +1,28 @@
+// hamburger icon
+.hamburger {
+	@include mobile {
+	    cursor: pointer;
+	    padding: 15px;
+	    display: block;
+	}
+  }
+
+.line {
+	@include mobile {
+		border-bottom: 4px solid #bbb;
+		width: 35px;
+		margin-bottom: 6px;
+	}
+}
+
+.line:last-child {
+	@include mobile {
+		margin-bottom: 0;
+	}
+}
+
+
+
 
 .main-nav {
 	padding: 0 10px;
@@ -10,12 +35,24 @@
 	@include wide {
 		float: right;
 	}
+	//hide menu on mobile until jquery toggles .open
+	@include mobile {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.3s;
+	}
+
 
 	ul {
 		@include wide {
 			float: left;
 		}
 	}
+
+}
+
+.open {
+    height: 165px;
 }
 
 .main-nav li {
