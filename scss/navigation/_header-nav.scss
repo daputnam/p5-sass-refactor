@@ -19,24 +19,24 @@
 }
 
 .main-nav li {
-	background-color: $white;
+	background-color: $color-bg-main;
 
 	@include narrow {
 		display: inline-block;
 		margin-left: 15px;
-		background-color: $alabaster;
+		background-color: $color-bg-accent;
 	}
 }
 
 .main-nav a {
 	font-size: 1em;
-	color: $tundora-grey;
+	color: $color-text-dark;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: $tarawera-blue;
+	color: $color-text-dark-hover;
 }
 
 .main-nav {

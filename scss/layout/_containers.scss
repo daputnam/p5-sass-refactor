@@ -1,3 +1,4 @@
+
 .wrapper {
 	@extend %center-content;
 	text-align: center;
@@ -7,7 +8,7 @@
 	@include narrow {
 		width: 90%;
 		margin: 0 auto;
-		background-color: $color-bg-main
+		background-color: $color-bg-main;
 	}
 }
 
@@ -17,18 +18,18 @@
 
 }
 .portfolio-item p {
-	padding-bottom:1em;
+	@extend %pad-bottom;
 
 	@include wide {
-		font-size:1.2em;
+		font-size:$font-size + .3;
 	}
 }
 
 .container {
 	@include wide  {
-		@extend %center-content;
+		//@extend %center-content;
 		max-width: 90%;
-		//margin: $margin-centered;
+		margin: $margin-centered;
 	}
 }
 

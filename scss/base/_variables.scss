@@ -12,13 +12,14 @@ $tarawera-blue	: #093a58;
 $color-bg-main		: $white;
 $color-bg-accent	: $alabaster;
 $color-text-dark	: $tundora-grey;
+$color-text-dark-hover : $tarawera-blue;
 $color-border-dark	: $alto-grey;
 
 
-//Font Stacks
-
-$stack-sans-serif	: 'Ubuntu', Helvetica, sans-serif;
-
+//Fonts
+$font: 'Ubuntu';
+$stack-sans-serif	: $font, Helvetica, sans-serif;
+$font-size 			: .95em;
 
 // Margin centered
 $margin-centered	: 0 auto;

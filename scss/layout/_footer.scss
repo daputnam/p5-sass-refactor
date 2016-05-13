@@ -21,7 +21,7 @@
 
 	p {
 		@include wide {
-			@extend %center-content; 
+			//@extend %center-content; 
 			margin: $margin-centered;
 			max-width: 40%;
 			margin-bottom: 0;

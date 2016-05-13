@@ -1,8 +1,9 @@
 .main-header {
+	@extend %pad-bottom;
 	background: url("../img/bg-pattern.png") repeat 0 0;
 	background-color: $color-bg-accent;
 	padding-top: .5em;
-	padding-bottom: 2em;
+	//padding-bottom: 2em;
 	margin-bottom:2em;
 	text-align: center;
 }
@@ -54,7 +55,7 @@
 
 .name {
 	font-size: 2em;
-	margin: 0;
+	margin: 0 auto;
 
 	@include wide {
 		float: left;
